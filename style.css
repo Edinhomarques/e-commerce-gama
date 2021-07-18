@@ -117,6 +117,20 @@ a, a:hover, a:focus, a:active {
 	justify-content: center;
 	align-items: center;
 }
+.price {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.normal-price {
+    color: #c7330e;
+    text-decoration: line-through;
+}
+
+.discount-price {
+    color: rgb(32, 116, 57);
+}
 
 .banner > h1 {
 	color: white;

@@ -61,8 +61,77 @@ a, a:hover, a:focus, a:active {
   
 }
 
+.section {
+    height: auto;
+    padding: 25px;
+	margin-top: 05px;
+}
 
+.section > h3 {
+   color: #E87447;
+   font-size: 25px;
+   margin-bottom: 15px;
+}
 
+.products--display {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    border: 1px solid white;
+    margin: 8px 10px;
+}
+
+.card--shadow {
+    box-shadow: 3px 7px 13px -1px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 3px 7px 13px -1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 3px 7px 13px -1px rgba(0,0,0,0.7);
+}
+
+.card--img img{
+   width: 100%;
+   height: auto; 
+   max-height: 160px;
+
+}
+
+.card--content {
+    padding: 5px;
+}
+
+.card--content p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.banner {
+    background-color: #E87447;
+	margin: 22px 0;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner > h1 {
+	color: white;
+	font-size: 55px;
+	text-align: center;
+	margin-right: 50px;
+}
+
+.banner img{
+	height: auto; 
+	max-height: 70px;
+	transform: rotate(90deg) ;
+	filter: invert(1);
+
+}
 @media (max-width: 450px) {
     .header--logo span {
         display: none;
@@ -72,5 +141,11 @@ a, a:hover, a:focus, a:active {
        font-weight: bold;
      
    }
+   .banner > h1{
+       font-size: 25px;
+   }
+   .banner img{
+	    max-height: 50px;
 
+    }
 }
